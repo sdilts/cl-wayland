@@ -99,6 +99,7 @@
    wl-signal-add
    link
    notify
+   wl-keyboard-key-state
    ))
 
 
@@ -460,3 +461,7 @@
   (with-foreign-slots ((listener_list) sig (:struct wl-signal))
     (wl-list-insert (getf listener_list 'prev)
 		    (foreign-slot-pointer listener '(:struct wl-listener) 'link))))
+
+(defcenum wl-keyboard-key-state
+  (:key-released 0)
+  :key-pressed)
