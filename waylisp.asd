@@ -1,4 +1,4 @@
-(asdf:defsystem #:wayisp
+(asdf:defsystem #:waylisp
   :description "Wrappers and extra functionality for cl-wayland"
   :author "Malcolm Still"
   :license "BSD 3-Clause"
